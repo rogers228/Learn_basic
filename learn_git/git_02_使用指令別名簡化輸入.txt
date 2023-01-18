@@ -1,0 +1,12 @@
+使用別名st取代status
+git config --global alias.st status
+
+
+原輸入 git status
+變成 git st
+
+
+
+
+使用config可查看alias
+git config --list

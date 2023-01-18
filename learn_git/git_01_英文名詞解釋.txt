@@ -1,0 +1,7 @@
+branch 分支
+
+master 主要的
+
+branch master 名為master的分支  也就是主幹
+
+stage 暫存區
