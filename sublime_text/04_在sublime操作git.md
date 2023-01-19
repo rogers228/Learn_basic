@@ -3,3 +3,5 @@
 先安裝套件git
 
 ## 操作命令
+ctrl + shift + p
+git.....
