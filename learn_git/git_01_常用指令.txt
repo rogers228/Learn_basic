@@ -61,7 +61,7 @@ git add --all    全部加入拉
 若無輸入說明，就無法提交。
 git commit -m "說明"
 
-忽略檔案，不要版控，建立.gitignore檔案，裡面輸入要乎月的檔案即可
+忽略檔案，不要版控，建立.gitignore檔案，裡面輸入要忽略的檔案即可
 .gitignore
 若已追蹤過，只能先將他刪除然後再 commit 一次
 
