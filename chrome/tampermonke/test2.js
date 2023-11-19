@@ -9,7 +9,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function(){'use strict'; main();})(); // run main now
+(function(){'use strict'; main();})(); // rSun main now
 
 function main(){
     document.addEventListener('keydown', on_keydown);
