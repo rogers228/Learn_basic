@@ -1,11 +1,11 @@
 <snippet>
     <!-- 程式碼片段 -->
     <content><![CDATA[
-let ${1:variable}; ${2:store}.subscribe((val) => ${1:variable} = val);
+let ${1:variable}; ${2:store}.subscribe((obj) => ${1:variable} = obj);
 ]]></content>
 
     <!-- 觸發keyword -->
-    <tabTrigger>subs</tabTrigger>
+    <tabTrigger>subo</tabTrigger>
     <!-- 作用範圍檔案 可使用逗號分隔 -->
     <scope>source.js, source.svelte, source.sv</scope>
     <!-- 程式碼片段敘述 -->
