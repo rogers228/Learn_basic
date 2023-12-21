@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         New Userscript
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @namespace    https://news.ebc.net.tw
+// @version      2023-12-20
 // @description  try to take over the world!
 // @author       You
-// @match        https://tw.news.yahoo.com/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=yahoo.com
+// @match        https://news.ebc.net.tw/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=net.tw
 // @grant        none
 // ==/UserScript==
 
@@ -13,18 +13,17 @@ const option = {
     output: false,
     disable: false,
     delay: 0.5,
-    elements_by_selector: [
-        'AsideStream',
-        'module-moreStories',
-        'sda-LDRB-iframe',
-        'module-mktIframe',
-        'community-bar-container',
-        'module-relatedStories',
-        'ybar-inner-wrap',
-        'Footer',
+    elements_by_selector: [ // 標準css選擇器
+        '#sticky_navigation',
+        '.dfp_ad',
     ],
-    elements_by_id_start:[
-    ]
+    elements_by_id_start:[ // id開頭
+        'div-onead-draft',
+        'dablewidget',
+    ],
+    elements_by_content:[ // 內容
+        '【往下看更多】',
+    ],
 }
 let scrollTimeout;
 function main(){
@@ -48,7 +47,17 @@ function find_element(){
             let divs = document.querySelectorAll(`div[id^="${idstart}"]`);
             remove_element(idstart, divs);
         }
+        for (let content of option.elements_by_content){
+            for (let tag of ['a', 'span', 'div']){
+                let divs = getElementsByText(content, tag)
+                remove_element(content, divs);
+            }
+        }
     }
+}
+
+function getElementsByText(str, tag = 'a') {
+    return Array.prototype.slice.call(document.getElementsByTagName(tag)).filter(el => el.textContent.trim() === str.trim());
 }
 
 function remove_element(name, elements){
