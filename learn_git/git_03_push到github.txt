@@ -13,7 +13,7 @@ git push -u origin main
 將main分支內容，push推向origin位址
 -u 參數代表 設定upstream  設定為上游
 
-
+git push origin main
 
 
 更換位址
