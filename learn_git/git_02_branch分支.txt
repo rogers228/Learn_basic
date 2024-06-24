@@ -23,7 +23,12 @@ git branch cat
 git checkout cat
 
 
-將base(當初開分支時的master a)的狀態，回寫過來b
+以上命令可以合併
+創建並切換到新分支
+git checkout -b cat
+
+
+將base(當初開分支時的master a)的狀態，回寫過來cat
 等同，將base的最新檔案整理過來
 而我僅專注在我開發的項目即可
 git rebase master

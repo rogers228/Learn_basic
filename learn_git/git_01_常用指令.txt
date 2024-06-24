@@ -1,4 +1,6 @@
 Git Bash 指令介面
+不要使用其它的例如 cmd, shell
+
 
 git --version 查詢git版本
 按shift insert 等同貼上
@@ -65,3 +67,6 @@ git commit -m "說明"
 .gitignore
 若已追蹤過，只能先將他刪除然後再 commit 一次
 
+
+## 推送
+git push origin main
