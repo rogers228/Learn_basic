@@ -14,6 +14,8 @@ GitHub 設定 "SSH and GPG keys" 添加 new ssh key
 設定名稱，並將id_rsa.pub的內容貼上，後儲存，成功後會收到email
 
 將您的 Git 遠端 URL 從 HTTPS 更新為 SSH
+每個專案都要設定
+
 git remote set-url origin git@github.com:rogers228/selecter_fwjs.git
 
 

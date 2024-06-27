@@ -1,6 +1,9 @@
 branch 分支
 
-master 主要的
+master   主要的的版本
+main     主要的的版本
+feature  開發功能的版本
+
 
 branch master 名為master的分支  也就是主幹
 
