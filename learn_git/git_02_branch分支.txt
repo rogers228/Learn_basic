@@ -38,10 +38,10 @@ git rebase master
 git diff master cat
 
 
-在b開發完畢後，使用過沒有問題，就要轉正為  master
+在b開發完畢後，使用過沒有問題，就要轉正為  main
 以a的角度來看，將b合併過來
 先切換
-git checkout master
+git checkout main
 git merge cat
 
 
