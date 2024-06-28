@@ -40,4 +40,5 @@ test/
 
 ```cmd
 git rm --cached sublime_hide.py
+git rm --cached website/prodect_202405/13_sass/all.css
 ```
