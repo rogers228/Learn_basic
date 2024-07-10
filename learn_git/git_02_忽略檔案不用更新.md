@@ -41,4 +41,6 @@ test/
 ```cmd
 git rm --cached sublime_hide.py
 git rm --cached website/prodect_202405/13_sass/all.css
-```
+
+# 將所有層級的__pycache__資料夾底下所有檔案，從暫存區移除
+git rm --cached -r '**/__pycache__/*'
