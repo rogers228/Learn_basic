@@ -25,14 +25,12 @@
 !：在模式前面加上 ! 表示取反，即不要忽略該文件或目錄。
 ```
 
-
 ## 忽略檔案
 config.py
 test*
 
 ## 忽略資料夾
 test/
-
 
 ## 忽略無效時
 已存在於暫存區時，將無法忽略，
@@ -41,6 +39,14 @@ test/
 ```cmd
 git rm --cached sublime_hide.py
 git rm --cached website/prodect_202405/13_sass/all.css
+```
 
-# 將所有層級的__pycache__資料夾底下所有檔案，從暫存區移除
+## 將所有層級的__pycache__資料夾底下所有檔案，從暫存區移除
+```
 git rm --cached -r '**/__pycache__/*'
+```
+搭配.gitignore 忽略
+```
+**/__pycache__/
+*.py[cod]
+```
