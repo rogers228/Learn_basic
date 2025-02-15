@@ -9,7 +9,7 @@
 
 ## Anaconda 防火牆錯誤訊息
 
-手動指定 Python 解析器
+手動指定 Python 解析器，實測無效
 
 Preferences → Package Settings → Anaconda → Settings – User
 ```json
@@ -18,6 +18,11 @@ Preferences → Package Settings → Anaconda → Settings – User
 }
 ```
 
-開啟 Windows 防火牆，允許 Sublime Text 連線：
-控制台 → Windows Defender 防火牆 → 允許應用程式通過防火牆
-找到 Sublime Text 和 Python，確保它們允許通過防火牆。
+
+關閉 Anaconda Worker
+```
+{
+    "anaconda_linter": false,
+    "auto_complete": false
+}
+```
