@@ -1,2 +1,2 @@
-name=allen
-age=9
+AUTHER=allen
+PYTHON_EXE=C:\Python37\python.exe
